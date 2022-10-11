@@ -1,7 +1,13 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
 
 const Statistics = () => {
-  return <div>hi statistics </div>;
+  const quizRating = useLoaderData();
+  return (
+    <div>
+      <div>{quizRating.data.map()}</div>{" "}
+    </div>
+  );
 };
 
 export default Statistics;

@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Quiz = ({ quize }) => {
+const QuizItem = ({ quize }) => {
   console.log(quize);
-  const { name, logo, total } = quize;
+  const { id, name, logo, total } = quize;
   return (
     <div>
       <div className="shadow-xl card w-96 bg-base-100 ">
@@ -17,7 +18,7 @@ const Quiz = ({ quize }) => {
               Total Quize:{total}
             </span>
             <button className="text-white bg-blue-600 p-[12px] mt-[15px] rounded-sm">
-              Start Practice
+              <Link to={`/quiz/${id}`}> Start Practice</Link>
             </button>
           </div>
         </div>
@@ -26,4 +27,4 @@ const Quiz = ({ quize }) => {
   );
 };
 
-export default Quiz;
+export default QuizItem;
