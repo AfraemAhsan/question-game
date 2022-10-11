@@ -1,7 +1,7 @@
 import React from "react";
 
-const Topic = () => {
+const Home = () => {
   return <div>hi topica</div>;
 };
 
-export default Topic;
+export default Home;
