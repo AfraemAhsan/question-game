@@ -17,7 +17,7 @@ const Blog = () => {
           will be redirected to that particular route.
         </p>
       </Divided>
-      <Divided className="flex flex-col p-3">
+      <Divided className="flex flex-col p-3 capitalize">
         <h3 className="text-3xl font-bold text-violet-700">
           How does context api works
         </h3>
@@ -29,7 +29,7 @@ const Blog = () => {
           state management using Redux.
         </p>
       </Divided>
-      <Divided className="flex flex-col p-3">
+      <Divided className="flex flex-col p-3 capitalize">
         <h3 className="text-3xl font-bold text-violet-700">
           what is useref in react
         </h3>
