@@ -1,9 +1,11 @@
 import React from "react";
+// internal imports
+import Divided from "Elements/Divided";
 
 const Blog = () => {
   return (
-    <div>
-      <div className="flex flex-col  justify-center text-center space-y-5 md:w-[1000px] lg:w-screen px-[30px] mx-auto capitalize">
+    <Divided className="flex flex-col p-5 m-2 ">
+      <Divided className="flex flex-col p-3 capitalize">
         <h3 className="text-3xl font-bold text-violet-700">
           what is the purpose of react router
         </h3>
@@ -14,8 +16,8 @@ const Blog = () => {
           this URL path matches any 'route' inside the router file, the user
           will be redirected to that particular route.
         </p>
-      </div>
-      <div className="flex flex-col  justify-center text-center space-y-5 md:w-[1000px] lg:w-screen px-[30px] mx-auto capitalize">
+      </Divided>
+      <Divided className="flex flex-col p-3">
         <h3 className="text-3xl font-bold text-violet-700">
           How does context api works
         </h3>
@@ -26,8 +28,8 @@ const Blog = () => {
           and so on. Context is also touted as an easier, lighter approach to
           state management using Redux.
         </p>
-      </div>
-      <div className="flex flex-col  justify-center text-center space-y-5 md:w-[1000px] lg:w-screen px-[30px] mx-auto capitalize">
+      </Divided>
+      <Divided className="flex flex-col p-3">
         <h3 className="text-3xl font-bold text-violet-700">
           what is useref in react
         </h3>
@@ -36,8 +38,8 @@ const Blog = () => {
           be used to store a mutable value that does not cause a re-render when
           updated. It can be used to access a DOM element directly.
         </p>
-      </div>
-    </div>
+      </Divided>
+    </Divided>
   );
 };
 
