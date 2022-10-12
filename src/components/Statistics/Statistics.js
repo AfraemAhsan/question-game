@@ -2,17 +2,13 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 
 const Statistics = () => {
-  const quizRating = useLoaderData();
-  console.log(quizRating);
+  const { data } = useLoaderData();
+  console.log(data);
   return (
     <div>
-      <div>
-        {quizRating.data.map((datas) => (
-          <p key={datas.id}>
-            {datas.name} {datas.total}
-          </p>
-        ))}
-      </div>
+      {data?.map((singledata) => (
+        <div key={singledata.id}>{singledata.name}</div>
+      ))}
     </div>
   );
 };
