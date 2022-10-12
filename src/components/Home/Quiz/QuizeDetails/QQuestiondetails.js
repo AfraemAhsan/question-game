@@ -1,13 +1,13 @@
 import React from "react";
 
 const QQuestiondetails = ({ item }) => {
-  const { options, question, correctAnswer } = item;
+  const { question } = item;
   return (
     <div>
-      <div>
-        <p>{correctAnswer}</p>
-        <p>{question}</p>
-        <p>{options}</p>
+      <div className="flex flex-col justify-center space-y-5 text-center">
+        <h3 className="text-xl mx-auto font-semibold text-emerald-600 w-[450px]">
+          Quiz : {question}
+        </h3>
       </div>
     </div>
   );
