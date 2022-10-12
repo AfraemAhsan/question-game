@@ -1,10 +1,13 @@
 import React from "react";
 
 const QQuestiondetails = ({ item }) => {
+  const { options, question, correctAnswer } = item;
   return (
     <div>
       <div>
-        <p>{item.question}</p>
+        <p>{correctAnswer}</p>
+        <p>{question}</p>
+        <p>{options}</p>
       </div>
     </div>
   );

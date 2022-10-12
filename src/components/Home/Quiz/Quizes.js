@@ -1,6 +1,6 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
-import Qoptions from "./QuizeDetails/Qoptions";
+
 import QQuestiondetails from "./QuizeDetails/QQuestiondetails";
 
 const Quizes = () => {
@@ -15,9 +15,9 @@ const Quizes = () => {
         ))}
       </div>
       <div>
-        {data.questions.options.map((optionitem) => (
-          <Qoptions key={optionitem.id} optionitem={optionitem}></Qoptions>
-        ))}
+        {/* {data.options.map((optionitem, id) => (
+          <Qoptions key={id} optionitem={optionitem}></Qoptions>
+        ))} */}
       </div>
     </div>
   );
